@@ -1,0 +1,4 @@
+# ninja log v5
+2	46887	1713617601765796000	/home/gdj592/code/infusion/Infusion/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/ext.o	3f366ac4ce3b1c90
+2	47856	1713617602814371000	/home/gdj592/code/infusion/Infusion/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/simple_knn.o	9aa9f53bb9ee5f30
+6	79458	1713617634421537000	/home/gdj592/code/infusion/Infusion/gaussian_splatting/submodules/simple-knn/build/temp.linux-x86_64-cpython-38/spatial.o	7e92d65f6dc75a45

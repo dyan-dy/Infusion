@@ -102,11 +102,12 @@ def readColmapCameras(cam_extrinsics, cam_intrinsics, images_folder):
         image_name = os.path.basename(image_path).split(".")[0]
         image = Image.open(image_path).convert("RGB")
         image_extensions = ['.jpg', '.JPG', '.png', '.PNG']
-        image_base_path = os.path.join(os.path.dirname(images_folder)+'/seg', os.path.splitext(os.path.basename(extr.name))[0])
+        image_base_path = os.path.join(os.path.dirname(images_folder)+'/masks', os.path.splitext(os.path.basename(extr.name))[0])
         for ext in image_extensions:
             if os.path.exists(image_base_path + ext):
                 image_mask_path = image_base_path + ext
                 break
+        
         image_mask=np.array(Image.open(image_mask_path).convert("L"))
         mask_array = np.where(image_mask >127, 1, 0)
         image_mask = Image.fromarray((mask_array*255).astype(np.uint8))
